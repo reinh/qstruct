@@ -1,9 +1,15 @@
 = qstruct
 
-Description goes here.
+An OpenStruct that provides query methods for its members.
+
+== Example:
+    require 'qstruct'
+    options = QueryStruct.new(:debug => true, :trace => false)
+    options.debug? # => true
+    options.trace? # => false
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a

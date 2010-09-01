@@ -1,7 +1,8 @@
 require 'helper'
 
 class TestQstruct < MiniTest::Unit::TestCase
-  def test_something_for_real
-    flunk "hey buddy, you should probably rename this file and start testing for real"
+  def test_query_alias
+    qstruct = QueryStruct.new(:query => true)
+    assert qstruct.query?
   end
 end
